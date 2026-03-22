@@ -1,0 +1,18 @@
+lock:
+  strategy: label_and_assignee
+  bot_user: assiharness-bot
+
+worktree:
+  cleanup_after: 24h
+  max_total: 20
+
+recovery:
+  stale_running_timeout: 1h
+  max_consecutive_failures: 3
+  orphan_check_interval: 30m
+
+issue_creation:
+  duplicate_check: true
+  loop_prevention:
+    max_issues_per_hour: 10
+    cooldown_on_limit: 30m

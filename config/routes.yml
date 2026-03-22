@@ -1,0 +1,8 @@
+routes:
+  - id: issue_to_dev
+    when:
+      source: github_issue
+      labels: ["cc:dev", "cc:ready"]
+    dispatch:
+      agent: dev
+    priority: 10

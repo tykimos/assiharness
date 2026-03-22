@@ -1,0 +1,35 @@
+id: dev
+type: claude_worker
+enabled: true
+
+prompt_file: prompts/dev.md
+allowed_tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
+
+worktree:
+  mode: per_task
+  pattern: "{agent_id}-{task_id}"
+
+concurrency:
+  max_parallel: 3
+
+timeouts:
+  execution: 30m
+  claim: 5m
+
+retries:
+  max_attempts: 2
+  backoff: 1m
+
+outputs:
+  on_success:
+    add_labels: ["cc:done"]
+    remove_labels: ["cc:running"]
+  on_failure:
+    add_labels: ["cc:failed"]
+    remove_labels: ["cc:running"]

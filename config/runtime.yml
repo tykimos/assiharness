@@ -1,0 +1,14 @@
+poll_interval: 30s
+log_level: info
+state_dir: state
+logs_dir: logs
+
+github:
+  api_url: https://api.github.com
+  owner: tykimos
+  repo: assiharness
+
+claude:
+  binary: claude
+  default_output_format: json
+  default_verbose: false
