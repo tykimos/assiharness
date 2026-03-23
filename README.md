@@ -16,10 +16,6 @@ graph LR
     C --> D["결과 반영
     ✅ PR 생성 + cc:done"]
 
-    style A fill:#E3F2FD,stroke:#1976D2
-    style B fill:#FFF3E0,stroke:#F57C00
-    style C fill:#E8F5E9,stroke:#388E3C
-    style D fill:#F3E5F5,stroke:#7B1FA2
 ```
 
 ## 비유로 이해하기
@@ -65,9 +61,6 @@ graph TD
     W2 --> A2
     W3 --> A3
 
-    style CM fill:#FFE0B2,stroke:#E65100
-    style RT fill:#B3E5FC,stroke:#0277BD
-    style SC fill:#C8E6C9,stroke:#2E7D32
 ```
 
 | 공장 비유 | AssiHarness | 설명 |
@@ -113,8 +106,6 @@ graph LR
         동일한 방식으로 실행"]
     end
 
-    style C1 fill:#FFCDD2,stroke:#C62828
-    style C2 fill:#C8E6C9,stroke:#2E7D32
 ```
 
 ### 2. Config-Driven (설정 중심)
@@ -128,8 +119,6 @@ graph LR
     C --> D["routes.yml에 규칙 추가"]
     D --> E["끝! 바로 동작"]
 
-    style A fill:#E3F2FD,stroke:#1976D2
-    style E fill:#C8E6C9,stroke:#2E7D32
 ```
 
 ### 3. GitHub = State Store (상태 저장소)
@@ -169,10 +158,6 @@ graph TD
     M -.->|"복사본"| W2
     M -.->|"복사본"| W3
 
-    style M fill:#E3F2FD,stroke:#1976D2
-    style W1 fill:#FFF3E0,stroke:#F57C00
-    style W2 fill:#FFF3E0,stroke:#F57C00
-    style W3 fill:#FFF3E0,stroke:#F57C00
 ```
 
 ## 시스템 구성도
@@ -259,9 +244,6 @@ graph TB
     RN --> CM
     LG --> LO
 
-    style RE fill:#B3E5FC,stroke:#0277BD
-    style RN fill:#FFE0B2,stroke:#E65100
-    style RC fill:#FFCDD2,stroke:#C62828
 ```
 
 ### 메인 실행 루프
@@ -289,10 +271,6 @@ graph TD
     💤 sleep"]
     J --> A
 
-    style A fill:#FFCDD2,stroke:#C62828
-    style D fill:#B3E5FC,stroke:#0277BD
-    style H fill:#C8E6C9,stroke:#2E7D32
-    style I fill:#F3E5F5,stroke:#7B1FA2
 ```
 
 ### Issue 생명주기
@@ -360,12 +338,6 @@ graph TD
     cc:bug + cc:ready"]
     L --> D
 
-    style A fill:#E3F2FD,stroke:#1976D2
-    style B fill:#FFF3E0,stroke:#F57C00
-    style D fill:#C8E6C9,stroke:#388E3C
-    style F fill:#F3E5F5,stroke:#7B1FA2
-    style H fill:#E8F5E9,stroke:#2E7D32
-    style K fill:#C8E6C9,stroke:#2E7D32,stroke-width:3px
 ```
 
 ## 라벨 시스템
@@ -395,10 +367,6 @@ graph LR
     U --> F
     F -.->|"재시도"| R
 
-    style R fill:#BBDEFB,stroke:#1976D2
-    style U fill:#FFF9C4,stroke:#F9A825
-    style D fill:#C8E6C9,stroke:#388E3C
-    style F fill:#FFCDD2,stroke:#C62828
 ```
 
 ## 사전 요구사항
@@ -413,9 +381,6 @@ graph LR
     B --- C["GitHub CLI (gh)
     🔗 GitHub 연동"]
 
-    style A fill:#E3F2FD,stroke:#1976D2
-    style B fill:#FFF3E0,stroke:#F57C00
-    style C fill:#E8F5E9,stroke:#388E3C
 ```
 
 ### 1. Go 설치 (1.21 이상)
@@ -617,8 +582,6 @@ graph LR
     D --> E["완료!
     재시작 불필요"]
 
-    style A fill:#E3F2FD,stroke:#1976D2
-    style E fill:#C8E6C9,stroke:#2E7D32
 ```
 
 #### 1단계: 에이전트 정의 파일 생성
@@ -733,12 +696,6 @@ graph TD
 
     AG --> PM
 
-    style RT fill:#E3F2FD,stroke:#1976D2
-    style AG fill:#FFF3E0,stroke:#F57C00
-    style RO fill:#B3E5FC,stroke:#0277BD
-    style SC fill:#C8E6C9,stroke:#2E7D32
-    style PO fill:#FFCDD2,stroke:#C62828
-    style PM fill:#F3E5F5,stroke:#7B1FA2
 ```
 
 ### 주기 작업 설정
@@ -819,10 +776,6 @@ graph TD
         🚦 max_parallel 설정"]
     end
 
-    style R1 fill:#FFCDD2,stroke:#C62828
-    style H1 fill:#FFF9C4,stroke:#F9A825
-    style C1 fill:#C8E6C9,stroke:#2E7D32
-    style CC1 fill:#B3E5FC,stroke:#0277BD
 ```
 
 ## 프로젝트 구조
@@ -874,8 +827,6 @@ graph TD
     ORCH --> HB
     ORCH --> LOG
 
-    style ORCH fill:#FFE0B2,stroke:#E65100
-    style MAIN fill:#E3F2FD,stroke:#1976D2
 ```
 
 ## CLI 옵션
